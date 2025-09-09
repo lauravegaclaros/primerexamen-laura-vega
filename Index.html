@@ -9,6 +9,213 @@
     <meta property="og:title" content="MANACO - Calzado de Calidad">
     <meta property="og:description" content="Calzado que impulsa tu paso. Descubre la colección MANACO de zapatos cómodos y duraderos.">
     <meta property="og:image" content="https://example.com/manaco-og-image.jpg">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* ENUNCIADO 3: ACCESIBILIDAD - Skip link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* ENUNCIADO 2: ESTRUCTURA SEMÁNTICA - Header */
+        header {
+            background-color: #f8f8f8;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        /* ENUNCIADO 2: ESTRUCTURA SEMÁNTICA - Navegación */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 1.5rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            padding: 0.5rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover, 
+        nav a:focus {
+            color: #0077cc;
+            outline: none;
+        }
+        
+        /* ENUNCIADO 2: ESTRUCTURA SEMÁNTICA - Banner */
+        .banner {
+            background-color: #e0e0e0; /* Gris como en la imagen */
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        /* ENUNCIADO 2: ESTRUCTURA SEMÁNTICA - Main y productos */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        .products-heading {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #333;
+        }
+        
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        /* ENUNCIADO 2: ESTRUCTURA SEMÁNTICA - Article para productos */
+        .product {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #f0f0f0;
+        }
+        
+        .product-content {
+            padding: 1.5rem;
+        }
+        
+        .product h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #0077cc;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover, 
+        .btn:focus {
+            background-color: #0077cc;
+            outline: none;
+        }
+        
+        /* ENUNCIADO 2: ESTRUCTURA SEMÁNTICA - Footer */
+        footer {
+            background-color: #f8f8f8;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        /* ENUNCIADO 5: DISEÑO MÓVIL */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                background-color: #ff0000; /* Rojo para móviles */
+                padding: 1rem;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+                color: white;
+            }
+            
+            nav ul {
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 0 0.5rem;
+            }
+            
+            .banner {
+                display: none; /* Ocultar banner en móviles */
+            }
+            
+            .products-container {
+                grid-template-columns: 1fr; /* 1 producto por fila */
+            }
+            
+            footer {
+                background-color: #0000ff; /* Azul para móviles */
+                color: white;
+            }
+        }
+    </style>
+</head>
     <!-- ENUNCIADO 3: ACCESIBILIDAD - Skip link -->
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>         
     <!-- ENUNCIADO 2: ESTRUCTURA SEMÁNTICA - Header -->
