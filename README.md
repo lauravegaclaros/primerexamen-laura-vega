@@ -1,11 +1,11 @@
-Laura Alejnadra Vega Claros
+Laura Alejandra Vega Claros
 Paralelo A
 Ingeniería de sistemas 
 Semestre 2
 
 primerexamen-laura-vega
 Acerca del proyecto:
-Autor: Laura Alejnadra Vega Claros
+Autor: Laura Alejandra Vega Claros
 Paralelo: A
 Carrera: Ingeniería de sistemas 
 Semestre: 2
