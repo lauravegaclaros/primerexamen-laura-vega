@@ -9,6 +9,7 @@ Autor: Laura Alejnadra Vega Claros
 Paralelo: A
 Carrera: Ingeniería de sistemas 
 Semestre: 2
+Año: 2025
 
 Primer parcial: Crear una landing page para la empresa MANACO
 Adjuntar: Enlaces de la página web y del repositorio de GitHub.
